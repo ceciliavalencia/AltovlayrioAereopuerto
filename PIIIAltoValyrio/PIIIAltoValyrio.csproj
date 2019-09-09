@@ -1,0 +1,410 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F6A49393-2749-4C0B-ADED-723ED3BF4B3A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PIIIAltoValyrio</RootNamespace>
+    <AssemblyName>PIIIAltoValyrio</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AltoValyrio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltoValyrio.Designer.cs">
+      <DependentUpon>AltoValyrio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AltoValyrioDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AltoValyrioDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Class\BitacoraTraslado.cs" />
+    <Compile Include="Class\Conectar.cs" />
+    <Compile Include="Class\DetalleIngreso.cs" />
+    <Compile Include="Class\Detalle_Traslado.cs" />
+    <Compile Include="Class\IngresoProducto.cs" />
+    <Compile Include="Class\Personal.cs" />
+    <Compile Include="Class\Producto.cs" />
+    <Compile Include="Class\Traslado.cs" />
+    <Compile Include="DireccionBodegas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DireccionBodegas.Designer.cs">
+      <DependentUpon>DireccionBodegas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAcercaDe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAcercaDe.Designer.cs">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBienvenida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBienvenida.Designer.cs">
+      <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmBorrarTraslado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmBorrarTraslado.Designer.cs">
+      <DependentUpon>FrmBorrarTraslado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCrearUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCrearUsuario.Designer.cs">
+      <DependentUpon>FrmCrearUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmEditarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmEditarProducto.Designer.cs">
+      <DependentUpon>FrmEditarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresoProducto.Designer.cs">
+      <DependentUpon>FrmIngresoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIngresoYDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIngresoYDetalle.Designer.cs">
+      <DependentUpon>FrmIngresoYDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReporteBit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReporteBit.Designer.cs">
+      <DependentUpon>FrmReporteBit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmReportes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmReportes.Designer.cs">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTraslado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTraslado.Designer.cs">
+      <DependentUpon>FrmTraslado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MisionyVision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MisionyVision.Designer.cs">
+      <DependentUpon>MisionyVision.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Operaciones\OperacionProducto.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="System\Windows\Forms\DataVisualization.cs" />
+    <EmbeddedResource Include="AltoValyrio.resx">
+      <DependentUpon>AltoValyrio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DireccionBodegas.resx">
+      <DependentUpon>DireccionBodegas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAcercaDe.resx">
+      <DependentUpon>FrmAcercaDe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBienvenida.resx">
+      <DependentUpon>FrmBienvenida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmBorrarTraslado.resx">
+      <DependentUpon>FrmBorrarTraslado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCrearUsuario.resx">
+      <DependentUpon>FrmCrearUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmEditarProducto.resx">
+      <DependentUpon>FrmEditarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresoProducto.resx">
+      <DependentUpon>FrmIngresoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIngresoYDetalle.resx">
+      <DependentUpon>FrmIngresoYDetalle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReporteBit.resx">
+      <DependentUpon>FrmReporteBit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmReportes.resx">
+      <DependentUpon>FrmReportes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTraslado.resx">
+      <DependentUpon>FrmTraslado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MisionyVision.resx">
+      <DependentUpon>MisionyVision.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="AltoValyrioDataSet.xsc">
+      <DependentUpon>AltoValyrioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet.xss">
+      <DependentUpon>AltoValyrioDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet1.xsc">
+      <DependentUpon>AltoValyrioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet1.xss">
+      <DependentUpon>AltoValyrioDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet10.xsc">
+      <DependentUpon>AltoValyrioDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet10.xss">
+      <DependentUpon>AltoValyrioDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet11.xsc">
+      <DependentUpon>AltoValyrioDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet11.xss">
+      <DependentUpon>AltoValyrioDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet2.xsc">
+      <DependentUpon>AltoValyrioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet2.xss">
+      <DependentUpon>AltoValyrioDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet3.xsc">
+      <DependentUpon>AltoValyrioDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet3.xss">
+      <DependentUpon>AltoValyrioDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet4.xsc">
+      <DependentUpon>AltoValyrioDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet4.xss">
+      <DependentUpon>AltoValyrioDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet5.xsc">
+      <DependentUpon>AltoValyrioDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet5.xss">
+      <DependentUpon>AltoValyrioDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet6.xsc">
+      <DependentUpon>AltoValyrioDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet6.xss">
+      <DependentUpon>AltoValyrioDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet7.xsc">
+      <DependentUpon>AltoValyrioDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet7.xss">
+      <DependentUpon>AltoValyrioDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet8.xsc">
+      <DependentUpon>AltoValyrioDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet8.xss">
+      <DependentUpon>AltoValyrioDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet9.xsc">
+      <DependentUpon>AltoValyrioDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="AltoValyrioDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AltoValyrioDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AltoValyrioDataSet9.xss">
+      <DependentUpon>AltoValyrioDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGOCHIQUITO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-save-icon.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
